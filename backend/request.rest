@@ -1,0 +1,82 @@
+//create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Hasnat Ferdiananda",
+    "email": "admin@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "admin"
+}
+
+###
+//get all users
+GET http://localhost:5000/users
+
+###
+//get single data
+GET http://localhost:5000/users/0e4f628d-5b98-4e10-b504-8288fafec326
+
+###
+//update user
+PATCH http://localhost:5000/users/0e4f628d-5b98-4e10-b504-8288fafec326
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "email": "john@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+
+###
+// delete a user
+DELETE http://localhost:5000/users/0e4f628d-5b98-4e10-b504-8288fafec326
+
+###
+// login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "12345"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "john@gmail.com",
+    "password": "12345"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
+
+
+###
+// get all posting
+GET http://localhost:5000/postings
+
+###
+// get single posting
+GET http://localhost:5000/postings/3a9879d5-0795-4da2-bd22-da0edf67e045
+
+###
+//post data posting
+PATCH  http://localhost:5000/postings/3a9879d5-0795-4da2-bd22-da0edf67e045
+Content-Type: application/json
+
+{
+    "title": "titanic",
+    "description": "merupakan sebuah film yang akan direalisasikan"
+}
+###
+DELETE http://localhost:5000/postings/555a761f-bd19-4013-bdda-271232247d08
