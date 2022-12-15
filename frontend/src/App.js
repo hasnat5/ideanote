@@ -3,7 +3,7 @@ import React from 'react';
 function App() {
   return (
     <div>
-      <p className='text-4xl'>ini adalah percobaan menggunakan tailwind</p>
+      <p className='text-4xl'>ini telah dipush ke github</p>
     </div>
   );
 }
