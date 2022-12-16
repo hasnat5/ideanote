@@ -25,7 +25,7 @@ const Navbar = () => {
                     <span class="text-fourth font-Lato font-black text-xl">Ideabox</span>
                 </NavLink>
 
-                <button onClick={logout} className='bg-fourth rounded-md py-2 px-5 font-Lato font-bold text-primary'>logout</button>
+                <button onClick={logout} className='bg-fourth rounded-md py-2 px-5 font-Lato font-bold text-primary'>Log out</button>
 
                 {/* hamburger */}
                 <button class="burgerBar inline-block cursor-pointer z-10 md:hidden">

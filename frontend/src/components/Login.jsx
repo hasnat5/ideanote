@@ -43,32 +43,31 @@ const Login = () => {
 
                         <form onSubmit={Auth} class="bg-secondary p-8 rounded-2xl">
                             {isError && <p className='text-center'>{message}</p>}
-                            <h3 class="mb-6 ">Login</h3>
+                            <h3 class="mb-6 font-Lato font-bold text-3xl">Login</h3>
                             <div class="mb-6" bis_skin_checked="1">
-                                <label for="email" class="block mb-2 text-sm font-medium text-white">Your email</label>
+                                <label for="email" className="block mb-2 font-bold text-fourth">Your email</label>
                                 <input
                                     type="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     id="email"
-                                    class="input"
+                                    class="w-full p-2 rounded"
                                     placeholder="name@gmail.com" />
                             </div>
                             <div class="mb-6" bis_skin_checked="1">
-                                <label for="password" class="block mb-2 text-sm font-medium text-white">Your password</label>
+                                <label for="password" className="block mb-2 font-bold text-fourth">Your password</label>
                                 <input
                                     type="password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     id="password"
-                                    class="input"
+                                    class="w-full p-2 rounded"
                                     placeholder='*****' />
                             </div>
 
-                            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-6">
+                            <button type="submit" class="text-white bg-fourth focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold font-Lato rounded-lg w-full px-5 py-2.5 text-center mb-6">
                                 {isLoading ? 'Loading...' : 'Login'}
                             </button>
-                            <p>Dont have account? <a href="signup.html" class="font-semibold text-CTAsec underline">Register now</a></p>
                         </form>
                     </div>
                 </div>

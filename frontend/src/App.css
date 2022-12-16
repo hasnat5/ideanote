@@ -4,8 +4,8 @@
 
 .wallpaper{
     background: linear-gradient(
-                rgba(36, 32, 75, 0.5), 
-                rgba(36, 32, 75, 0.5)), url(assets/login.jpg);
+                rgba(229, 191, 137, 0.294), 
+                rgba(229, 192, 137, 0.294)), url(assets/login_img.jpg);
     background-position: center;
     background-size: cover;
 }
