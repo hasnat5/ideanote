@@ -1,0 +1,11 @@
+.active{
+    @apply bg-third;
+}
+
+.wallpaper{
+    background: linear-gradient(
+                rgba(36, 32, 75, 0.5), 
+                rgba(36, 32, 75, 0.5)), url(assets/login.jpg);
+    background-position: center;
+    background-size: cover;
+}
