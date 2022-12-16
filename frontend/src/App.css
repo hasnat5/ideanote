@@ -9,3 +9,7 @@
     background-position: center;
     background-size: cover;
 }
+
+.card{
+    background-image: linear-gradient(56deg, #4158D0E6 0%, #C850C0E6 46%, #FFCC70E6 100%);
+}
